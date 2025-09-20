@@ -1,0 +1,160 @@
+  .dashboard-header {
+    background: linear-gradient(90deg, #dc3545, #b259d5);
+    color: white;
+    margin-top: 70px;
+  }
+  .stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); /* shadow added */
+}
+
+
+  .stat-card h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #6c757d;
+  }
+
+  .stat-card h3 {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+  }
+
+  /* Table styling */
+  .table {
+    border-collapse: separate; /* allow rounded corners */
+    border-spacing: 0;
+    border: 1px solid #dee2e6; /* main border */
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden; /* ensures rounded corners clip content */
+  }
+
+  /* Table header */
+  .table thead th {
+    background-color: #343a40; /* dark header */
+    color: white;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  /* Table body rows */
+  .table tbody td {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  /* Last row bottom border */
+  .table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Rounded corners for first and last headers */
+  .table thead th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  .table thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  /* Rounded corners for first and last cells in last row */
+  .table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+
+  .table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  /* Optional: hover effect */
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  /* Switch toggle alignment */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #28a745;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  .search {
+    background: lightgray; /* blue to purple */
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-bottom: 2rem;
+  }
+  .search input,
+  .search select {
+    border: none;
+    outline: none;
+  }
+  @media (max-width: 768px) {
+    .stat-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .icon-box {
+      margin-bottom: 0.5rem;
+    }
+
+    .search {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

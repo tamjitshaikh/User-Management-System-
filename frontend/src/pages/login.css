@@ -1,0 +1,91 @@
+/* Full page background */
+.login-page {
+  height: 100vh;
+  background: url("/images/bg-pattern.jpg") no-repeat center center/cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.card {
+  border-radius: 20px;
+  background: #fff;
+  padding: 2rem;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/* Input icons */
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Eye icon on right */
+.password-eye {
+  position: absolute;
+  right: 15px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.password-eye:hover {
+  color: #000;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #dc3545, #a03bc8);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-dark {
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.login-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #dc3545, #a03bc8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;  /* <-- Centers the circle */
+}
+
+
+.login-icon i {
+  font-size: 2rem;
+  color: white;
+}

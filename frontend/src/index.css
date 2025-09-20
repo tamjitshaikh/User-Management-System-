@@ -1,0 +1,20 @@
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+}
+.card {
+  border-radius: 12px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
